@@ -1,4 +1,4 @@
-## Flix Part 2
+## Webflix Part 2
 
 ### User Stories
 
@@ -15,7 +15,7 @@ There were some initial difficulties like resizing the posters to make it fit th
 
 ---
 
-## Flixster Part 1
+## Webflix Part 1
 
 ### User Stories
 
