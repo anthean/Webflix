@@ -59,6 +59,9 @@ class MoveGridViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        // We're reusing the views here so that we don't display hundreds and hundreds of movies 
+        // Understand *why* we opt to recycle views, why the other way around is bad, etc.
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieGridCell", for: indexPath) as! MovieGridCell
         
         let movie = movies[indexPath.item]
@@ -67,6 +70,8 @@ class MoveGridViewController: UIViewController, UICollectionViewDataSource, UICo
         let posterPath = movie["poster_path"] as! String
         let posterUrl = URL(string: baseUrl + posterPath)!
         
+        // What is happening here when we call af_setImage? 
+        // What is alamofireimage doing on their end "under the hood" when this is called?
         cell.posterView.af_setImage(withURL: posterUrl)
     
 
