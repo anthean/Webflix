@@ -1,5 +1,3 @@
-## Webflix Part 2
-
 ### User Stories
 
 #### REQUIRED 
@@ -25,6 +23,4 @@ There were some initial difficulties like resizing the posters to make it fit th
 - [x]  User can view the movie poster image for each movie.
 
 
-### Notes
-I had some initial problems committing & pushing to GitHub which required me to delete and make new repositories for this project.
 
